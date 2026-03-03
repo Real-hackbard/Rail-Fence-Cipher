@@ -34,5 +34,6 @@ W . . . E . . . C . . . R . . . U . . . O . . .
 
 (Spaces and punctuation are omitted.) Then read off the text horizontally to get the ciphertext:
 
-
+# Decryption  
+Let ```N``` be the number of rails used during encryption. Observe that as the plaintext is written, the sequence of each letter's vertical position on the rails varies up and down in a repeating cycle. In the above example (where ```N=3```) the vertical position repeats with a period of 4. In general the sequence repeats with a period of ```2(N-1)```
 
