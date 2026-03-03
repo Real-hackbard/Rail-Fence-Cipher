@@ -10,6 +10,11 @@
 
 </br>
 
+The rail fence cipher (also called a zigzag cipher) is a [classical](https://en.wikipedia.org/wiki/Classical_cipher) type of [transposition cipher](https://en.wikipedia.org/wiki/Transposition_cipher). It derives its name from the manner in which encryption is performed, in analogy to a fence built with horizontal rails.
+
+In the rail fence cipher, the plaintext is written downwards diagonally on successive "rails" of an imaginary fence, then moving up when the bottom rail is reached, down again when the top rail is reached, and so on until the whole plaintext is written out. The ciphertext is then read off in rows.
+
+For example, to encrypt the message 'WE ARE DISCOVERED. RUN AT ONCE.' with 3 "rails", write the text as:
 
 
 
