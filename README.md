@@ -96,3 +96,4 @@ W         V         O
 ```
 
 # Cryptanalysis:
+The cipher's key is ```N``` the number of rails. If ```N``` is known, the ciphertext can be decrypted by using the above algorithm. Values of ```N``` equal to or greater than ```L```, the length of the ciphertext, are not usable, since then the ciphertext is the same as the plaintext. Therefore, the number of usable keys is low, allowing the brute-force attack of trying all possible keys. As a result, the rail-fence cipher is considered weak.
