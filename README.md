@@ -77,3 +77,22 @@ The resulting cipher text is:
 ```WVO EOETN ACRAC RSENE EIDU DR```
 
 We know that ```L=24``` and if we use ```N=6``` we can solve the equation above.
+
+We now have ```N=6```, ```X=4``` and ```Y=2``` Or, 6 rails, 5 diagonals (4+1), and 2 empty spaces at the end. By blocking out the empty spaces at the end of the last diagonal, we can simply fill in the Rail Fence line by line using the ciphertext.
+
+```pascal
+_         _         _
+ _       _ _       _ _
+  _     _   _     _   _
+   _   _     _   _     _
+    _ _       _ _       X
+     _         _         X
+W         V         O
+ E       O E       T N
+  A     C   R     A   C
+   _   _     _   _     _
+    _ _       _ _       X
+     _         _         X
+```
+
+# Cryptanalysis:
