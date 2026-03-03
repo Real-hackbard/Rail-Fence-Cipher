@@ -35,7 +35,7 @@ W . . . E . . . C . . . R . . . U . . . O . . .
 (Spaces and punctuation are omitted.) Then read off the text horizontally to get the ciphertext:
 
 # Decryption  
-Let ```N``` be the number of rails used during encryption. Observe that as the plaintext is written, the sequence of each letter's vertical position on the rails varies up and down in a repeating cycle. In the above example (where ```N=3```) the vertical position repeats with a period of 4. In general the sequence repeats with a period of ```2(N-1)```
+Let ```N``` be the number of rails used during encryption. Observe that as the plaintext is written, the sequence of each letter's vertical position on the rails varies up and down in a repeating cycle. In the above example (where ```N=3```) the vertical position repeats with a period of 4. In general the sequence repeats with a period of ```2(N-1)```.
 
 Write each string on a separate line with spaces after each letter in the first and last line:
 
@@ -46,3 +46,7 @@ W   E   C   R   U   O
 ```
 
 Then one can read off the plaintext down the first column, diagonally up, down the next column, and so on.
+
+if ```L``` is not a multiple of ```2(N-1)``` the determination of how to split up the ciphertext is slightly more complicated than as described above, but the basic approach is the same. Alternatively, for simplicity in decrypting, one can pad the plaintext with extra letters to make its length a multiple of ```2(N-1)```.
+
+If the ciphertext has not been padded, but you either know or are willing to [brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) the number of rails used, you can decrypt it using the following steps.
