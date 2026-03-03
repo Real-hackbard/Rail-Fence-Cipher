@@ -97,3 +97,6 @@ W         V         O
 
 # Cryptanalysis:
 The cipher's key is ```N``` the number of rails. If ```N``` is known, the ciphertext can be decrypted by using the above algorithm. Values of ```N``` equal to or greater than ```L```, the length of the ciphertext, are not usable, since then the ciphertext is the same as the plaintext. Therefore, the number of usable keys is low, allowing the brute-force attack of trying all possible keys. As a result, the rail-fence cipher is considered weak.
+
+# Zigzag cipher: 
+The term zigzag cipher may refer to the rail fence cipher as described above. However, it may also refer to a different type of cipher described by [Fletcher Pratt](https://en.wikipedia.org/wiki/Fletcher_Pratt) in Secret and Urgent. It is "written by ruling a sheet of paper in vertical columns, with a letter at the head of each column. A dot is made for each letter of the message in the proper column, reading from top to bottom of the sheet. The letters at the head of the columns are then cut off, the ruling erased and the message of dots sent along to the recipient, who, knowing the width of the columns and the arrangement of the letters at the top, reconstitutes the diagram and reads what it has to say."
