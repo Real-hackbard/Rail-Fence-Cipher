@@ -39,11 +39,15 @@ Let ```N``` be the number of rails used during encryption. Observe that as the p
 
 Write each string on a separate line with spaces after each letter in the first and last line:
 
+</br>
+
 ```pascal
 W   E   C   R   U   O
  E R D S O E E R N T N E
   A   I   V   D   A   C
 ```
+
+</br>
 
 Then one can read off the plaintext down the first column, diagonally up, down the next column, and so on.
 
@@ -53,11 +57,9 @@ If the ciphertext has not been padded, but you either know or are willing to [br
 
 As above, let ```L``` be the length of the string to be decrypted and let  ```N``` be the number of rails used during encryption. We will add two variables, x and y , where ```x+1``` the number of diagonals in the decrypted Rail Fence, and y= the number of empty spaces in the last diagonal.
 
-Next solve for 
-x
-{\displaystyle x} and 
-y
-{\displaystyle y} algebraically, where both values are the smallest number possible. This is easily done by incrementing x by 1 until the denominator is larger than ```L``` and then simply solving for yConsider the example cipher, modified to use 6 rails instead of 3.
+Next solve for algebraically, where both values are the smallest number possible. This is easily done by incrementing x by 1 until the denominator is larger than ```L``` and then simply solving for yConsider the example cipher, modified to use 6 rails instead of 3.
+
+</br>
 
 ```pascal
 W.........V.........O
@@ -67,6 +69,8 @@ W.........V.........O
 ....E.I.......D.U.......
 .....D.........R........
 ```
+
+</br>
 
 The resulting cipher text is:
 
