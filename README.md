@@ -50,3 +50,20 @@ Then one can read off the plaintext down the first column, diagonally up, down t
 if ```L``` is not a multiple of ```2(N-1)``` the determination of how to split up the ciphertext is slightly more complicated than as described above, but the basic approach is the same. Alternatively, for simplicity in decrypting, one can pad the plaintext with extra letters to make its length a multiple of ```2(N-1)```.
 
 If the ciphertext has not been padded, but you either know or are willing to [brute-force](https://en.wikipedia.org/wiki/Brute-force_attack) the number of rails used, you can decrypt it using the following steps.
+
+As above, let ```L``` be the length of the string to be decrypted and let  ```N``` be the number of rails used during encryption. We will add two variables, x and y , where ```x+1``` the number of diagonals in the decrypted Rail Fence, and y= the number of empty spaces in the last diagonal.
+
+Next solve for 
+x
+{\displaystyle x} and 
+y
+{\displaystyle y} algebraically, where both values are the smallest number possible. This is easily done by incrementing x by 1 until the denominator is larger than ```L``` and then simply solving for yConsider the example cipher, modified to use 6 rails instead of 3.
+
+```pascal
+W.........V.........O
+.E.......O.E.......T.N
+..A.....C...R.....A...C
+...R...S.....E...N.....E
+....E.I.......D.U.......
+.....D.........R........
+```
