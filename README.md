@@ -67,3 +67,9 @@ W.........V.........O
 ....E.I.......D.U.......
 .....D.........R........
 ```
+
+The resulting cipher text is:
+
+```WVO EOETN ACRAC RSENE EIDU DR```
+
+We know that ```L=24``` and if we use ```N=6``` we can solve the equation above.
