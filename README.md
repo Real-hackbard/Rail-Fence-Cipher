@@ -14,9 +14,25 @@ The rail fence cipher (also called a zigzag cipher) is a [classical](https://en.
 
 In the rail fence cipher, the plaintext is written downwards diagonally on successive "rails" of an imaginary fence, then moving up when the bottom rail is reached, down again when the top rail is reached, and so on until the whole plaintext is written out. The ciphertext is then read off in rows.
 
+</br>
+
+![Rail Fence Cipher](https://github.com/user-attachments/assets/192d4d59-645e-4415-b905-340145c38b67)
+
+</br>
+
 For example, to encrypt the message 'WE ARE DISCOVERED. RUN AT ONCE.' with 3 "rails", write the text as:
 
+</br>
 
+```pascal
+W . . . E . . . C . . . R . . . U . . . O . . . 
+. E . R . D . S . O . E . E . R . N . T . N . E 
+. . A . . . I . . . V . . . D . . . A . . . C .
+```
+
+</br>
+
+(Spaces and punctuation are omitted.) Then read off the text horizontally to get the ciphertext:
 
 
 
